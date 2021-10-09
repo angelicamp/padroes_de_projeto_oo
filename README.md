@@ -13,3 +13,10 @@ tempo de compilação.*<br/>
 * *Escopo ‘Objeto’ negociam com relações de objetos, que podem mudar em
 tempo de execução.*
 _________________________________________________________________________________________________________________
+##Singleton
+Usado quando desejado, que uma classe tenha apenas uma instância na aplicação. A idéia é garantir que apenas um objeto exista,
+independente do número de requisições recebidas para criá-lo.<br/>
+O construtor da classe fica como **privado** (private), sendo que não pode ser instanciada para fora da própria classe.<br/>
+A classe é final, pois não permite a criação de subclasses da própria classe.<br/>
+O acesso é permitido através do método que retorna a instância única da classe, ou faz a criação de uma, caso não tenha sido criada.<br/>
+![sing](https://user-images.githubusercontent.com/85784665/136676567-752ede10-fd72-4875-846e-9a2fa261424d.png)
