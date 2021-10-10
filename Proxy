@@ -1,0 +1,37 @@
+class BookSearchProxy implements BookSearchInterface {
+
+  private BookSearchInterface base;
+
+  BookSearchProxy (BookSearchInterface base) {
+    this.base = base;
+  }
+
+  Book getBook(String ISBN) {
+    if("livro com ISBN no cache")
+      return "livro do cache"
+    else {
+      Book book = base.getBook(ISBN);
+      if(book != null)
+        "adicione book no cache"
+      return book;
+    }
+  }
+  ...
+}
+
+__________________________________________________________
+void main() {
+  BookSearch bs = new BookSearch();
+  ...
+  View view = new View(bs);
+  ...
+}
+___________________________________________________________
+void main() {
+  BookSearch bs = new BookSearch();
+  BookSearchProxy pbs;
+  pbs = new BookSearchProxy(bs);
+  ...
+  View view = new View(pbs);
+  ...
+}
