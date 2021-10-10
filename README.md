@@ -19,4 +19,5 @@ independente do número de requisições recebidas para criá-lo.<br/>
 O construtor da classe fica como **privado** (private), sendo que não pode ser instanciada para fora da própria classe.<br/>
 A classe é final, pois não permite a criação de subclasses da própria classe.<br/>
 O acesso é permitido através do método que retorna a instância única da classe, ou faz a criação de uma, caso não tenha sido criada.<br/>
-![sing](https://user-images.githubusercontent.com/85784665/136676567-752ede10-fd72-4875-846e-9a2fa261424d.png)
+![sing](https://user-images.githubusercontent.com/85784665/136676567-752ede10-fd72-4875-846e-9a2fa261424d.png)<br/>
+**Exemplo: ** https://github.com/angelicamp/padroes_de_projeto_oo/blob/main/Singleton
