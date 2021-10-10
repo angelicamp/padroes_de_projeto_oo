@@ -13,17 +13,17 @@ tempo de compilação.*<br/>
 * *Escopo ‘Objeto’ negociam com relações de objetos, que podem mudar em
 tempo de execução.*
 _________________________________________________________________________________________________________________
-##Singleton
+## Singleton
 Usado quando desejado, que uma classe tenha apenas uma instância na aplicação. A idéia é garantir que apenas um objeto exista,
 independente do número de requisições recebidas para criá-lo.<br/>
 O construtor da classe fica como **privado** (private), sendo que não pode ser instanciada para fora da própria classe.<br/>
 A classe é final, pois não permite a criação de subclasses da própria classe.<br/>
 O acesso é permitido através do método que retorna a instância única da classe, ou faz a criação de uma, caso não tenha sido criada.<br/>
 ![sing](https://user-images.githubusercontent.com/85784665/136676567-752ede10-fd72-4875-846e-9a2fa261424d.png)<br/>
-**Exemplo: ** [Singleton](https://github.com/angelicamp/padroes_de_projeto_oo/blob/main/Singleton)
+Exemplo: [Singleton](https://github.com/angelicamp/padroes_de_projeto_oo/blob/main/Singleton)
 __________________________________________________________________________________________________________________
-##Proxy
+## Proxy
 Permite que o acesso seja controlado por meio de outro objeto, que atua como substituto. Geralmente, usado na programação orientada a aspectos, tendo como objetivo ajudar a separar, encapsular, modularizar métodos e organizar o código de acordo com a importância.<br/>
 O objetivo de um proxy é mediar o acesso a um objeto base, agregando-lhe funcionalidades, sem que ele tome conhecimento disso.<br/>![prox](https://user-images.githubusercontent.com/85784665/136677044-e4605d67-a973-47b2-b714-c7dbd7b8947f.png)<br/>
-**[Proxy]
+Exemplo: [Proxy](https://github.com/angelicamp/padroes_de_projeto_oo/blob/main/Proxy) 
 
